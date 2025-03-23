@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jelly.blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="gallery">
+        <nav>
+            <a href="index.html"><img src="media/logo.jpg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-window-close' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">ABOUT <i class='bx bx-chevron-down'> </i></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="travel.html">Travel</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#" id="toggleForm">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>
+
+      
+        <div class="gallery-wrapper">
+            <h1 class="gallery-title">Gallery</h1>
+        </div>
+       
+        <section class="jelly-gallery">
+            <div class="image">
+                <img src="media\galleries\jel2.jpg" alt="Description">
+                <p class="desc">JELLY</p>
+            </div>
+            <div class="image">
+                <img src="media\galleries\jel3.jpg" alt="Description">
+                <p class="desc green-bg">JELLY</p>
+            </div>
+            <div class="image">
+                <img src="media\galleries\jel1.jpg" alt="Description">
+                <p class="desc pastelgreen-bg">JELLY</p>
+            </div>
+            <div class="image">
+                <img src="media\galleries\jel5.jpg" alt="Description">
+                <p class="desc blue-bg">JELLY</p>
+            </div>
+            <div class="image">
+                <img src="media\galleries\jel6.jpg" alt="Description">
+                <p class="desc">JELLY</p>
+            </div>
+            <div class="image">
+                <img src="media\galleries\jel4.jpg" alt="Description">
+                <p class="desc darkgreen-bg">JELLY</p>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+ 
+ <!--___________________FOOTER_______________________-->
+ <section class="footer">
+    <h4>About US</h4>
+    <p></p>
+     <div class="icons">
+         <i class='bx bxl-facebook-circle'></i>
+         <i class='bx bxl-twitter'></i>
+         <i class='bx bxl-instagram-alt' ></i>
+         <i class='bx bxl-linkedin-square' ></i>
+     </div>
+</section>
+
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+ 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+     </script>
+
+
+
+</body>
+</html>
